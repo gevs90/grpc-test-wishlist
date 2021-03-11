@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package grpc;
 
-option go_package = "github.com/tomiok/grpc-test-wishlist/proto";
+option go_package = "github.com/gevs90/grpc-test-wishlist/proto";
 
 message Item {
   enum ItemPriority {

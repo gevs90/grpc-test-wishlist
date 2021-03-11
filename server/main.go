@@ -12,7 +12,7 @@ type server struct {
 	pb.UnimplementedWishListServiceServer
 }
 
-func (s *server) create (ctx context.Context, req *pb.CreateWishListReq) (*pb.CreateWishListResp, error) {
+func (s *server) Create (ctx context.Context, req *pb.CreateWishListReq) (*pb.CreateWishListResp, error) {
 	fmt.Println("creating the wish list " + req.WishList.Name)
 	return &pb.CreateWishListResp{
 		WishListId: req.WishList.Id,
